@@ -1,0 +1,33 @@
+{
+  "pluginAlias": "Esp8266AcToggleController",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "AC Toggle"
+      },
+      "username": {
+        "title": "Device Username",
+        "type": "string",
+        "required": true
+      },
+      "password": {
+        "title": "Device Password",
+        "type": "string",
+        "required": true
+      },
+      "contactTime": {
+        "title": "Contact Time (ms)",
+        "description": "The time in ms that the relay should contact to trigger the ac contacts for.",
+        "type": "number",
+        "required": true,
+        "default": 100
+      }
+    }
+  }
+}
